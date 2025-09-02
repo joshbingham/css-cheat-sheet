@@ -14,182 +14,187 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        
-        <!-- Header section -->
+        <main>
+            
+            <!-- Header section -->
 
-        <h1>CSS Cheat Sheet</h1>
-        <p>I hope you find this cheat sheet helpful! I've created this for a Codecademy project through the Full-Stack Engineer pathway.</p>
-        <p>I've broken it down to CSS selectors and properties. For each there are example use cases. Here are the navigation links to each section, including my contact info:</p>
-        
-        <!-- Navigation links -->
+            <h1>CSS Cheat Sheet</h1>
+            <p>I hope you find this cheat sheet helpful! I've created this for a Codecademy project through the Full-Stack Engineer pathway.</p>
+            <p>I've broken it down to CSS selectors and properties. For each there are example use cases. Here are the navigation links to each section, including my contact info:</p>
+            
+            <!-- Navigation links -->
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#css-selectors">CSS Selectors</a></li>
+                    <li><a href="#css-properties">CSS Properties</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </nav>
 
-        <ul>
-            <li><a href="#css-selectors">CSS Selectors</a></li>
-            <li><a href="#css-properties">CSS Properties</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
+            <!-- CSS Selectors Table -->
+            <div class="table-container">
+                <table id="css-selectors">
+                    <caption>CSS Selectors</caption>
+                    <thead>
+                        <tr class="headers">
+                            <th>Selector</th>
+                            <th>Explanation</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Universal selector: *</td>
+                            <td>Selects all elements</td>
+                            <td>
+                                <code>* { margin: 0; padding: 0; }</code>
+                                <br>(resets margin and padding for all elements)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Element selector: h1</td>
+                            <td>Selects all h1 elements</td>
+                            <td>
+                                <code>h1 { color: green; }</code>
+                                <br>(sets text color to green for all h1 elements)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Class selector: .class</td>
+                            <td>Selects elements with class "class"</td>
+                            <td>
+                                <code>.header { background-color: #f2f2f2; }</code>
+                                <br>(sets background color for elements with class "header")
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ID Selector: #id</td>
+                            <td>Selects element with id "id"</td>
+                            <td>
+                                <code>#logo { width: 100px; height: 100px; }</code>
+                                <br>(sets width and height for element with id "logo")
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <!-- CSS Selectors Table -->
+            <!-- CSS Properties Table -->
+            <div class="table-container">
+                <table id="css-properties">
+                    <caption>CSS Properties</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="3" class="headers">Color & Background</th>
+                        </tr>
+                        <tr class="sub-headers">
+                            <th>Property</th>
+                            <th>Explanation</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>color:</td>
+                            <td>Sets text color</td>
+                            <td>
+                                <code>color: #333;</code>
+                                <br>(sets text color to dark gray)   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>background-color:</td>
+                            <td>Sets background color</td>
+                            <td>
+                                <code>background-color: #f2f2f2;</code>
+                                <br>(sets background color to light gray)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>background-image:</td>
+                            <td>Sets background image</td>
+                            <td>
+                                <code>background-image: url('image.jpg');</code>
+                                <br>(sets background image tp "image.jpg")
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="3" class="headers">Typography</th>
+                        </tr>
+                        <tr class="sub-headers">
+                            <th>Property</th>
+                            <th>Explanation</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>font-family:</td>
+                            <td>Sets font family</td>
+                            <td>
+                                <code>font-family: Arial, sans-serif;</code>
+                                <br>(sets font family to Arial with sans-serif as a fallback)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>font-size:</td>
+                            <td>Sets font size</td>
+                            <td>
+                                <code>font-size: 16px;</code>
+                                <br>(sets font size to 16 pixels)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>text-align:</td>
+                            <td>Sets text alignment</td>
+                            <td>
+                                <code>text-align: center;</code>
+                                <br>(centers text)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="3" class="headers">Layout</th>
+                        </tr>
+                        <tr class="sub-headers">
+                            <th>Property</th>
+                            <th>Explanation</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>display:</td>
+                            <td>Sets display type (block, inline, flex, etc.)</td>
+                            <td>
+                                <code>display: flex;</code>
+                                <br>(sets display to flexbox)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>position:</td>
+                            <td>Sets positioning (static, relative, absolute, etc.)</td>
+                            <td>
+                                <code>position: absolute;</code>
+                                <br>(sets positioning to absolute)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>top, right, bottom, left:</td>
+                            <td>Sets offset properties</td>
+                            <td>
+                                <code>top: 10px; left: 20px;</code>
+                                <br>(sets top and left offsets)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <table id="css-selectors">
-            <caption>CSS Selectors</caption>
-            <thead>
-                <tr class="headers">
-                    <th>Selector</th>
-                    <th>Explanation</th>
-                    <th>Example</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Universal selector: *</td>
-                    <td>Selects all elements</td>
-                    <td>
-                        <code>* { margin: 0; padding: 0; }</code>
-                        <br>(resets margin and padding for all elements)
-                    </td>
-                </tr>
-                <tr>
-                    <td>Element selector: h1</td>
-                    <td>Selects all h1 elements</td>
-                    <td>
-                        <code>h1 { color: green; }</code>
-                        <br>(sets text color to green for all h1 elements)
-                    </td>
-                </tr>
-                <tr>
-                    <td>Class selector: .class</td>
-                    <td>Selects elements with class "class"</td>
-                    <td>
-                        <code>.header { background-color: #f2f2f2; }</code>
-                        <br>(sets background color for elements with class "header")
-                    </td>
-                </tr>
-                <tr>
-                    <td>ID Selector: #id</td>
-                    <td>Selects element with id "id"</td>
-                    <td>
-                        <code>#logo { width: 100px; height: 100px; }</code>
-                        <br>(sets width and height for element with id "logo")
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+            <!-- Footer for my contact info -->
 
-        <!-- CSS Properties Table -->
-
-        <table id="css-properties">
-            <caption>CSS Properties</caption>
-            <thead>
-                <tr>
-                    <th colspan="3" class="headers">Color & Background</th>
-                </tr>
-                <tr class="sub-headers">
-                    <th>Property</th>
-                    <th>Explanation</th>
-                    <th>Example</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>color:</td>
-                    <td>Sets text color</td>
-                    <td>
-                        <code>color: #333;</code>
-                        <br>(sets text color to dark gray)   
-                    </td>
-                </tr>
-                <tr>
-                    <td>background-color:</td>
-                    <td>Sets background color</td>
-                    <td>
-                        <code>background-color: #f2f2f2;</code>
-                        <br>(sets background color to light gray)
-                    </td>
-                </tr>
-                <tr>
-                    <td>background-image:</td>
-                    <td>Sets background image</td>
-                    <td>
-                        <code>background-image: url('image.jpg');</code>
-                        <br>(sets background image tp "image.jpg")
-                    </td>
-                </tr>
-                <tr>
-                    <th colspan="3" class="headers">Typography</th>
-                </tr>
-                <tr class="sub-headers">
-                    <th>Property</th>
-                    <th>Explanation</th>
-                    <th>Example</th>
-                </tr>
-                <tr>
-                    <td>font-family:</td>
-                    <td>Sets font family</td>
-                    <td>
-                        <code>font-family: Arial, sans-serif;</code>
-                        <br>(sets font family to Arial with sans-serif as a fallback)
-                    </td>
-                </tr>
-                <tr>
-                    <td>font-size:</td>
-                    <td>Sets font size</td>
-                    <td>
-                        <code>font-size: 16px;</code>
-                        <br>(sets font size to 16 pixels)
-                    </td>
-                </tr>
-                <tr>
-                    <td>text-align:</td>
-                    <td>Sets text alignment</td>
-                    <td>
-                        <code>text-align: center;</code>
-                        <br>(centers text)
-                    </td>
-                </tr>
-                <tr>
-                    <th colspan="3" class="headers">Layout</th>
-                </tr>
-                <tr class="sub-headers">
-                    <th>Property</th>
-                    <th>Explanation</th>
-                    <th>Example</th>
-                </tr>
-                <tr>
-                    <td>display:</td>
-                    <td>Sets display type (block, inline, flex, etc.)</td>
-                    <td>
-                        <code>display: flex;</code>
-                        <br>(sets display to flexbox)
-                    </td>
-                </tr>
-                <tr>
-                    <td>position:</td>
-                    <td>Sets positioning (static, relative, absolute, etc.)</td>
-                    <td>
-                        <code>position: absolute;</code>
-                        <br>(sets positioning to absolute)
-                    </td>
-                </tr>
-                <tr>
-                    <td>top, right, bottom, left:</td>
-                    <td>Sets offset properties</td>
-                    <td>
-                        <code>top: 10px; left: 20px;</code>
-                        <br>(sets top and left offsets)
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- Footer for my contact info -->
-
-        <footer id="contact-me">
-            <h2>Contact Me</h2>
-            <p>Created by Josh Bingham</p>
-            <p>Email: <a href="mailto:joshuabingham@hotmail.co.uk">joshuabingham@hotmail.co.uk</a> |
-               GitHub: <a href="https://github.com/joshbingham" target="_blank">github.com/joshbingham</a> 
-            </p>
-        </footer>
+            <footer id="contact-me">
+                <h2>Contact Me</h2>
+                <p>Created by Josh Bingham</p>
+                <p>Email: <a href="mailto:joshuabingham@hotmail.co.uk">joshuabingham@hotmail.co.uk</a> |
+                GitHub: <a href="https://github.com/joshbingham" target="_blank" rel="noopener noreferrer">github.com/joshbingham</a> 
+                </p>
+            </footer>
+        </main>
     </body>
 </html>
